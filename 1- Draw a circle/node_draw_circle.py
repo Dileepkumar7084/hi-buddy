@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-
+#1!/usr/bin/env python
 import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
@@ -27,7 +26,7 @@ def draw_circle():
 	vel_msg.angular.y = 0
 	vel_msg.angular.z = speed/radius
 	
-	# Setting the current time for distance calculus
+	#2 Setting the current time for distance calculus
 	t0 = rospy.Time.now().to_sec()
 	current_angle = 0
 
